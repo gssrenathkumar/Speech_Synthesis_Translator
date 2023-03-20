@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  .button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>parliament Speech Synthesis Translator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='aassets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="https://raj-it-hackathon.pwskills.com/" class="logo d-flex align-items-center">
+
+        <img src="{{url_for('static', filename='assets/img/intro.png')}}"/>
+      </a>
+
+      <nav id="navbar" class="navbar navbar-light bg-light">
+        <ul>
+          <li><a class="nav-link scrollto active" href="">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Speech Synthesis Translator</a></li>
+          <li><a class="nav-link scrollto" href="#services">Speaker Emotion Detection</a></li>
+          <li><a class="nav-link scrollto" href="https://portfilio-gssrenathkumar.vercel.app/">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">About Me</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+<br><br><br><br><br><center>
+<h1> <data-aos="fade-up">Speech Translation Sucessfully Completed</h1>
+
+<audio controls>
+  <audio src="{{url_for('static', filename='assets/wav/french_output.wav')}}"/>
+</audio>
+
+    </center>
+  <center>
+    <a href="https://drive.google.com/file/d/12ldKzRwrwIuwHb8H_keQXhaXfXox2aUQ/view?usp=sharing"id="GFG_UP" style="font-size: 15px;
+                          font-weight: bold;">
+    </a>
+
+    <a href="https://drive.google.com/file/d/12ldKzRwrwIuwHb8H_keQXhaXfXox2aUQ/view?usp=sharing" id="GFG_DOWN" style="font-size: 24px;
+    font-weight: bold;
+    color: green;">
+</a>
+<br>
+    <button id="button" onclick="GFG_Fun()" class="button button2">Open Wav File in Google Drive</button>
+
+    </button>
+<br>
+<br>
+
+
+    <script>
+        var up = document.getElementById('GFG_UP');
+        var down = document.getElementById('GFG_DOWN');
+
+        var arr = ["Click to Open","Click to Open ","Click to Open"];
+
+
+
+        function GFG_Fun() {
+            down.innerHTML =
+                arr[Math.floor(Math.random() * arr.length)];
+        }
+    </script>
+</body>
+</center>
+</html>

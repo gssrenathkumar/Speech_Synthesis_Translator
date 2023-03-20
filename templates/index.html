@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Parliament Speech Synthesis Translator</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" href="{{ url_for('static', filename='assets/img/favicon.png') }}">
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/img/apple-touch-icon.png') }}">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='aassets/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="https://raj-it-hackathon.pwskills.com/" class="logo d-flex align-items-center">
+
+        <img src="{{url_for('static', filename='assets/img/intro.png')}}"/>
+      </a>
+
+      <nav id="navbar" class="navbar navbar-light bg-light">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="https://colab.research.google.com/drive/1jkkd7SDTSFFIO-9cCYpVt5qhMSdkze_C">Speech Synthesis Translator</a></li>
+          <li><a class="nav-link scrollto" href="https://colab.research.google.com/drive/15eRsWo9qGEQOXejx9mxgaGI9_iUAnhl6?authuser=2#scrollTo=xPz_N9PoF6z9">Speaker Emotion Detection</a></li>
+          <li><a class="nav-link scrollto" href="https://portfilio-gssrenathkumar.vercel.app/">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="#about">About Me</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Speech Synthesis Translator with Same Emotion and Pitch</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Here we are translation the voice from one language to another using Deep Neural Network by keeping humans own pitch and emotions in the translated speech.</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="https://docs.google.com/presentation/d/1FGbprMCbXeEZLnRnxBUrBvw0kv9EqyYSv5hkjzWqaJQ/edit?usp=sharing" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>For More Details --> Click Here for PPT</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img class="img-fluid" src="{{url_for('static', filename='assets/img/test1.jpg')}}"  />
+        </div>
+      </div>
+    </div>
+
+
+
+  </section><!-- End Hero -->
+
+    <section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Problem Statement</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">The Problem Statement is to create a speech synthesis translator which is used in Parliament Session in order convert the speakers language into the user's prefered language.
+So that the user understand what the speaker is talking about.Also to know the emotion shown by the speaker.</h2>
+          <h2 data-aos="fade-up" data-aos-delay="400">Upload Wav File</h2>
+          <br><br>
+          <form method='POST' enctype='multipart/form-data'>
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+    </form>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img class="img-fluid" src="{{url_for('static', filename='assets/img/data.jpg')}}"  />
+        </div>
+      </div>
+    </div>
+  </section>
+<center>
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Who Am I</h3>
+              <h2>G S Srenath Kumar</h2>
+              <p>
+                I'm pursuing a B.Tech in Artificial Intelligence and Machine Learning at Sri Ramachandra Institute of Higher Education and Research.
+I am highly interested in developing End-to-End Software 🤖.
+Also, my interests include software design, artificial intelligence, machine learning, computer vision, natural language processing, deep learning and many more.
+
+My hobbies include reading books📚, listening to music🎵 and researching future Technology⌚
+              </p>
+              <center>
+              <div class="text-center text-lg-start">
+                <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Read More</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+                </center>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img class="img-fluid" src="{{url_for('static', filename='assets/img/s1.png')}}"/>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+</center>
+
+
+
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>University Rajasthan College, Jawahar Lal Nehru Marg, <br>Gandhi Nagar, Jaipur, Rajasthan 302004</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9414454572 <br>+91 7838183082</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>helpdesk.istart@rajasthan.gov.in <br> ayushtyagi@rajasthan.gov.in,</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>About Hackathon</span>
+            </a>
+            <br>
+            <p>Organized by the Department of IT&C, Rajasthan Hackathon 7.0 will be the seventh edition of this tradition that will offer a lucrative platform to the ingenious youth, startups & entrepreneurs across the nation to use their out-of-the-box thinking and bring innovation & change. Hackathon 7.0 will be a 24 hour non-stop coding marathon providing an excellent platform to brilliant coders, developers & designers to derive innovative solutions and take home prizes worth Rs. 25 Lacs along with an exclusive opportunity to work with the Government of Rajasthan. Coders, developers & designers will be given a chance to use their cutting-edge techniques and inventive methods on themes like Social Impact, Sustainability, Block Chain, Education & Learning etc.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>University Rajasthan College, Jawahar Lal Nehru Marg, <br>Gandhi Nagar, Jaipur, Rajasthan 302004
+              <strong>Phone:</strong> +91 9414454572<br>
+              <strong>Email:</strong> helpdesk.istart@rajasthan.gov.in<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Rajasthan University College</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
