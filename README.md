@@ -9,3 +9,4 @@
 <p> Problem Statement: The Problem Statement is to create a speech synthesis translator which is used in Parliament Session in order convert the speakers language into the user's prefered language. So that the user understand what the speaker is talking about.Also to know the emotion shown by the speaker.
   
   Deployment Link: https://website-test-7oim0iy74-gssrenathkumar.vercel.app/index.html
+  PPT Presentation : https://docs.google.com/presentation/d/1gxhjjVSzp6MkM8XBrAZSrok0naE02Xqh/edit?usp=sharing&ouid=110507914239404626380&rtpof=true&sd=true
