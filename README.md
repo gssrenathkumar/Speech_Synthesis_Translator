@@ -6,7 +6,7 @@
 
 <p> Here we are translation the voice from one language to another using Deep Neural Network by keeping humans own pitch and emotions in the translated speech.</p>
 
-<p> Problem Statement: The Problem Statement is to create a speech synthesis translator which is used in Parliament Session in order convert the speakers language into the user's prefered language. So that the user understand what the speaker is talking about.Also to know the emotion shown by the speaker.
+<p> Problem Statement: The Problem Statement is to create a speech synthesis translator which is used in Parliament Session in order convert the speakers language into the user's prefered language. So that the user understand what the speaker is talking about.Also to know the emotion shown by the speaker.</p>
   <p>
   Deployment Link: https://website-test-7oim0iy74-gssrenathkumar.vercel.app/index.html
     </p>
