@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Speech Synthesis Translator</title>
 </head>
 <body>
 	<h1>Speech Synthesis Translator</h1>
